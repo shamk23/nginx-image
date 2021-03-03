@@ -30,7 +30,7 @@ Push Dev:
     - docker tag proxy:latest $ECR_REPO:dev
     - docker push $ECR_REPO:dev
   rules:
-    - if: "$CI_COMMIT_BRANCH == 'master'"
+    - if: "$CI_COMMIT_BRANCH == 'main'"
 
 Push Release:
   stage: Push
