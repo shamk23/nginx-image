@@ -21,7 +21,7 @@ Build:
     - docker save --output data/image.tar proxy
   artifacts:
     name: image
-    path:
+    paths:
       - data/
 
 Push Dev:
